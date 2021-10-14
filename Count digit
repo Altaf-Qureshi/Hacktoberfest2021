@@ -1,0 +1,17 @@
+// Write a C++ program to count digits in a given number.
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n, count=0, rem;
+    cout << "Enter number: ";
+    cin >> n;
+    while(n!=0)
+    {
+        n = n / 10;
+        count++;
+    }
+    cout << "Digit: " << count;
+    
+    return 0;
+}
